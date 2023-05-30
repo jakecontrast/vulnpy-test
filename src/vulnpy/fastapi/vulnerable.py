@@ -8,10 +8,10 @@ from vulnpy.trigger import TRIGGER_MAP, get_trigger
 router = APIRouter()
 
 
-def get_root_name(name):
+def get_root_name(namey):
     if name == "home":
         return "/vulnpy"
-    return "/vulnpy/{}".format(name)
+    return "/vulnpy/{}".format(namey)
 
 
 def get_trigger_name(name, trigger):
